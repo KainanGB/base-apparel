@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-primary);
+}
+
+:root {
+  --clr-primary: hsl(0, 36%, 70%);
+  --clr-secondary: hsl(0, 93%, 68%);
+  --clr-neutral-gray: hsl(0, 6%, 24%);
+  --clr-gradient-white: hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  --clr-gradient-pink: hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  --ff-primary: "Josefin Sans", sans-serif;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.main {
+  background: linear-gradient(to right, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
+  background-image: url(../images/bg-pattern-desktop.svg);
+  width: 100vw;
+}
+.main__left .main__logo {
+  background-image: url(../images/logo.svg);
+  background-size: 6rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 3rem 0rem;
+  margin-left: 2rem;
+}
+.main__left .main__bg {
+  background-image: url(../images/hero-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 8rem 0;
+  min-height: 4rem;
+}
+.main__left .main__box {
+  text-align: center;
+}
+.main__left .main__box .main__title {
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 80%, 86%);
+  font-weight: lighter;
+}
+.main__left .main__box .main__title--bold {
+  font-size: 3rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-neutral-gray);
+  font-weight: normal;
+}
+.main__left .main__box .main__paragraph {
+  color: hsl(0deg, 80%, 86%);
+}/*# sourceMappingURL=style.css.map */
