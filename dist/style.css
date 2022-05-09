@@ -18,6 +18,7 @@ body {
   --clr-neutral-gray: hsl(0, 6%, 24%);
   --clr-gradient-white: hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
   --clr-gradient-pink: hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  --clr-light-pink: hsl(0, 80%, 86%);
   --ff-primary: "Josefin Sans", sans-serif;
 }
 
@@ -28,7 +29,6 @@ body {
 .main {
   background: linear-gradient(to right, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
   background-image: url(../images/bg-pattern-desktop.svg);
-  width: 100vw;
 }
 .main__left .main__logo {
   background-image: url(../images/logo.svg);
@@ -42,9 +42,9 @@ body {
   background-image: url(../images/hero-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  padding: 8rem 0;
-  min-height: 4rem;
+  display: block;
+  max-width: 100%;
+  padding: 10rem 0;
 }
 .main__left .main__box {
   text-align: center;
@@ -68,4 +68,53 @@ body {
 }
 .main__left .main__box .main__paragraph {
   color: hsl(0deg, 80%, 86%);
+}
+.main__left .main__box .main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 21rem;
+  margin: 0 auto;
+}
+.main__left .main__box .main__button input {
+  border: var(--clr-light-pink) solid 1px;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 15rem;
+  max-width: 15rem;
+}
+.main__left .main__box .main__button input:focus {
+  outline: none;
+}
+.main__left .main__box .main__button input::-moz-placeholder-shown {
+  color: var(--clr-light-pink);
+}
+.main__left .main__box .main__button input:-ms-input-placeholder-shown {
+  color: var(--clr-light-pink);
+}
+.main__left .main__box .main__button input::placeholder-shown {
+  color: var(--clr-light-pink);
+}
+.main__left .main__box .main__button input::-moz-placeholder {
+  color: var(--clr-light-pink);
+}
+.main__left .main__box .main__button input:-ms-input-placeholder {
+  color: var(--clr-light-pink);
+}
+.main__left .main__box .main__button input::placeholder {
+  color: var(--clr-light-pink);
+}
+.main__left .main__box .main__button button {
+  border: none;
+  background-color: var(--clr-light-pink);
+  border-radius: 5rem;
+  padding: 0.8rem;
+  width: 4.5rem;
+  position: absolute;
+  right: 2rem;
+}
+
+footer {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
