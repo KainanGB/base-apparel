@@ -48,6 +48,7 @@ body {
 }
 .main__left .main__box {
   text-align: center;
+  padding-bottom: 4rem;
 }
 .main__left .main__box .main__title {
   font-size: 3rem;
@@ -68,6 +69,8 @@ body {
 }
 .main__left .main__box .main__paragraph {
   color: hsl(0deg, 80%, 86%);
+  width: 26rem;
+  margin: 2rem auto;
 }
 .main__left .main__box .main__button {
   display: flex;
@@ -113,6 +116,7 @@ body {
   width: 4.5rem;
   position: absolute;
   right: 2rem;
+  cursor: pointer;
 }
 .main__bg-right {
   background-image: url(../images/hero-desktop.jpg);
@@ -142,6 +146,7 @@ body {
   }
   .main .main__left {
     margin: 0 auto;
+    width: 50vw;
   }
   .main .main__bg {
     display: none !important;
@@ -149,7 +154,7 @@ body {
   }
   .main .main__right {
     display: block;
-    width: 50rem;
+    width: 50vw;
   }
   .main .bg-right {
     background-image: url(../images/hero-desktop.jpg);

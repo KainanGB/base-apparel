@@ -29,6 +29,7 @@
 
     & .main__box {
       text-align: center;
+      padding-bottom: 4rem;
 
       & .main__title {
         font-size: 3rem;
@@ -52,6 +53,8 @@
 
       & .main__paragraph {
         color: hsl(0, 80%, 86%);
+        width: 26rem;
+        margin: 2rem auto;
       }
 
       & .main__button {
@@ -87,6 +90,7 @@
           width: 4.5rem;
           position: absolute;
           right: 2rem;
+          cursor: pointer;
         }
       }
     }
@@ -124,6 +128,7 @@
 
     .main__left {
       margin: 0 auto;
+      width: 50vw;
     }
 
     .main__bg {
@@ -133,8 +138,9 @@
 
     .main__right {
       display: block;
-      width: 50rem;
+      width: 50vw;
     }
+
     .bg-right {
       background-image: url(../images/hero-desktop.jpg);
       background-size: cover;
